@@ -44,4 +44,16 @@ export class GyerekService {
       }
     });
   }
+
+  addToy(id:number, toyId:number){
+    return this.db.keres.create({
+      data: {
+        keroId: id,
+        jatekId: toyId
+      }
+    });
+  }
+
+
+
 }
